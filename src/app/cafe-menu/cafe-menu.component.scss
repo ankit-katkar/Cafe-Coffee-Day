@@ -1,0 +1,55 @@
+.container-fluid{
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+}
+.Cafe-Menu-Image{
+    width: 100%;
+    padding-top: 80px;
+}
+.wrapper{
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    padding: 2% 6% 2% 6%;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.btn{
+    font-weight: 600;
+    width: 180px;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.btn:hover{
+color: white;
+background-color:  #dc4348;
+font-weight: 500;
+}
+.images{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 770px){
+    .wrapper{
+        padding: 2% 1% 1% 1%;
+    }
+    .btn{
+        font-weight: 600;
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .wrapper{
+        padding: 5% 1% 1% 1%;
+    }
+    .btn{
+        font-weight: 600;
+        width: 140px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+        <img class="Cafe-Menu-Image" src="../../assets/desktop-new-menu-cafe-coffee-day_1.jpg" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper">
+          <div class="item"><button class="btn" (click)="ClassicsBtn()">HOT CLASSICS</button></div>
+          <div class="item"><button class="btn" (click)="ChillersBtn()">ALL-TIME CHILLERS</button></div>
+          <div class="item"><button class="btn" (click)="Chillers2Btn()">ALL-TIME CHILLERS</button></div>
+          <div class="item"><button class="btn" (click)="DelightsBtn()">ALL-DAY DELIGHTS</button></div>
+          <div class="item"><button class="btn" (click)="SweetToothBtn()">SWEET TOOTH X 32</button></div>
+          <div class="item"><button class="btn" (click)="InfoBtn()">NUTRITIONAL INFO</button></div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+        <img *ngIf="ClassicsImage" class="images" src="../../assets/HOT CLASSICS.jpg" alt="">
+        <img *ngIf="ChillersImage" class="images" src="../../assets/1st ALL TIME CHILLERS.jpg" alt="">
+        <img *ngIf="ChillersImage2" class="images" src="../../assets/2nd ALL TIME CHILLERS.jpg" alt="">
+        <img *ngIf="DelightsImage" class="images" src="../../assets/ALL DAY DELIGHTS.jpg" alt="">
+        <img *ngIf="SweetToothImage" class="images" src="../../assets/SWEET TOOTH X32.jpg" alt="">
+        <img *ngIf="InfoImage" class="images" src="../../assets/FOOD nutritional info.jpg" alt="">
+  
+    </div>
+  </div>
+</div>
