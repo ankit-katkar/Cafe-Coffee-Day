@@ -1,0 +1,87 @@
+.container-fluid {
+    margin-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .title-head {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .7px;
+    color: #d51922;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+.background-card-content {
+    background-color: #f4f4f4;
+    margin-top: 3%;
+  }
+  
+  .background-card-padding {
+    padding: 5% 5% 0% 5%;
+  }
+  .background-card-padding-row2 {
+    padding: 2% 5% 5% 5%;
+  }
+
+  .background-card-content .card .card-body {
+    padding: 0;
+  }
+  
+  .hotels-content img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .hotels-content h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: .4px;
+    color: #565656;
+    margin-left: 3%;
+    margin-top: 2%
+
+  }
+  
+  .hotels-content p {
+    color: #8c8c8c;
+    font-size: 16px;
+    margin-left: 3%;
+  }
+  
+  .hotels-btn button {
+    border: 1px solid #dc4348;
+    border-radius: 0;
+    color: #dc4348;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 10px 40px 10px 40px;
+    background-color: white;
+  }
+@media only screen and (min-width: 480px) and (max-width: 770px){
+    .container-fluid {
+        margin-top: 20%;
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+}
+  @media only screen and (max-width: 480px) {
+
+    .container-fluid {
+        margin-top: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    
+      .title-head {
+        font-size: 20px;
+      }
+    .background-card-padding .card {
+      margin-bottom: 5%;
+    }
+    .background-card-padding-row2 .card {
+        margin-bottom: 5%;
+      }
+  }

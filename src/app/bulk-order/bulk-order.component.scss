@@ -1,0 +1,109 @@
+.container-fluid{
+ margin-top: 12%;
+ padding: 0% 5% 0% 5%;
+}
+
+.title-head {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .7px;
+    color: #d51922;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .hr{
+    width: 46%;
+  }
+  .title-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: #71706f;
+  }
+  .background-color{
+    background: #f3f3f2;
+    margin-top: 3%;
+  }
+  .bull-order-form{
+    padding: 4% 40% 4% 4%;
+  }
+  .form-title{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: .6px;
+    text-align: left;
+    color: #585856;
+    font-family: 'Montserrat', sans-serif;
+  }
+  form{
+    margin-top: 3%;
+  }
+  input{
+    height: 50px;
+    margin-top: 6%;
+  }
+  textarea{
+    margin-top: 5%;
+  }
+::placeholder{
+  color: #71706f;
+  font-weight: 200;
+}
+  button{
+    color: #e10600;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #e10600;
+    font-weight: 600;
+    background: #fff;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 5%;
+  }
+  ul{
+    margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 770px) {
+    .container-fluid{
+      margin-top: 20%;
+      padding: 0% 5% 0% 5%;
+     }
+     .title-head {
+      font-size: 26px;
+    }
+    .hr{
+      width: 80%;
+    }
+    .bull-order-form{
+      padding: 5%;
+    }
+     
+  };
+
+  @media only screen and (max-width: 480px) {
+    .container-fluid{
+      margin-top: 38%;
+      padding: 0% 5% 0% 5%;
+     }
+     
+     .title-head {
+         font-size: 24px;
+       }
+       .hr{
+         width: 100%;
+       }
+       .bull-order-form{
+         padding: 5%;
+       }
+       .form-title{
+         font-size: 20px;
+       }
+
+       input{
+         height: 40px;
+       }
+
+  };

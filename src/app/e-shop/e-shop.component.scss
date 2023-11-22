@@ -1,0 +1,362 @@
+.container-fluid {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+}
+
+.main-banner img {
+  width: 100%;
+  padding-top: 120px;
+}
+
+.tab-section {
+  background-color: #f4f4f4;
+  padding: 70px 0px 70px 0px;
+
+}
+
+.home-grid-wraper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: .7px;
+  color: #575756;
+}
+
+.section {
+  text-align: center;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.section-block p {
+  font-size: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.tab-section .btn {
+  border: 1px solid #dc4348;
+  border-radius: 0;
+  color: #dc4348;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px 40px 10px 40px;
+  margin-top: 5%;
+  background-color: white;
+}
+
+.trending-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: .7px;
+  color: #575756;
+  padding: 60px 0 0 0;
+}
+
+.padding {
+  padding: 5%;
+}
+
+.product-content {
+  padding-top: 0;
+}
+
+.product-content p {
+  color: #8c8c8c;
+  font-size: 20px;
+}
+
+.product-content strong {
+  color: #575756;
+  font-size: 20px;
+}
+
+.card-footer {
+  padding: 0%;
+  margin: 0%;
+  border-top: 0;
+  background-color: white;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.count-btn {
+  display: flex;
+}
+
+.count-btn .minus {
+  height: 38px;
+  width: 38px;
+  border: 1px solid #dc4348;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+}
+
+.count-btn input {
+  height: 38px;
+  width: 38px;
+  border: 1px solid #dc4348;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+}
+
+.count-btn .plus {
+  height: 38px;
+  width: 38px;
+  border: 1px solid #dc4348;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+}
+
+.addToCart button {
+  height: 38px;
+  width: 180px;
+  border: 1px solid #dc4348;
+  border-radius: 0;
+  font-size: 16px;
+  color: #dc4348;
+  background-color: white;
+  border-bottom-right-radius: 5px;
+
+}
+
+.card-button button {
+  border: 1px solid #dc4348;
+  border-radius: 0;
+  color: #dc4348;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px 40px 10px 40px;
+  margin-top: 5%;
+}
+
+.Subscribe_and_save_img img {
+  width: 100%;
+}
+
+.padding-row {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.Enterprise_city {
+  text-align: center;
+  justify-content: center;
+}
+
+.Enterprise_city img {
+  padding: 15% 0 12% 0;
+}
+
+.Enterprise_city h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: .7px;
+  color: #575756;
+  max-width: 400px;
+}
+
+.hr {
+  border: 1px solid #dc4348;
+  opacity: 100%;
+}
+
+.Enterprise_city p {
+  text-align: center;
+  letter-spacing: .7px;
+  color: #575756;
+  max-width: 550px;
+  font-weight: 100;
+}
+
+.padding-three {
+  padding: 5% 10% 5% 10%;
+}
+
+.content {
+  padding: 5% 5% 2% 5%;
+}
+
+.content-img {
+  width: 100%;
+}
+
+.content span {
+  margin-left: 6%;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.banner-ccd-img img {
+  width: 100%;
+}
+
+.background-card-content {
+  background-color: #f4f4f4;
+  padding-bottom: 5%;
+}
+
+.background-card-padding {
+  padding: 5%;
+}
+
+.background-card-content .card .card-body {
+  padding: 0;
+}
+
+.hotels-content img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.hotels-content h5 {
+  color: #575756;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+.hotels-content p {
+  color: #8c8c8c;
+  font-size: 18px;
+  margin-left: 3%;
+}
+
+.hotels-btn button {
+  border: 1px solid #dc4348;
+  border-radius: 0;
+  color: #dc4348;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px 40px 10px 40px;
+  background-color: white;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+  .card {
+    margin-bottom: 5%;
+  }
+
+  .padding-row {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .hotels-content h5 {
+    font-size: 18px;
+  }
+
+  .hotels-content p {
+    font-size: 17px;
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home-title {
+    font-size: 20px;
+  }
+
+  .tab-section{
+    padding: 20% 5% 20% 5%;
+  }
+  .section{
+      text-align: left;
+      display:block;
+      justify-content: left;
+      padding-top: 15%;
+  }
+  .section-block{
+    padding: 5%;
+    margin-bottom: 5%;
+      display: flex;
+      border: 1px solid #dc4348;
+      background-color: white;
+  }
+  .section-block p{
+      font-size: 18px;
+      margin-left: 8%;
+  }
+
+  .tab-section .btn {
+    margin-top: 20%;
+  }
+
+  .trending-title {
+    font-size: 20px;
+  }
+
+  .padding {
+    padding: 5%;
+  }
+
+  .padding-row {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .Enterprise_city img {
+    width: 100%;
+  }
+
+  .Enterprise_city h3 {
+    font-size: 18px;
+  }
+
+  .padding-three {
+    padding: 5% 5% 5% 5%;
+  }
+
+  .padding-three .card {
+    margin-bottom: 5%;
+    border-color: #dc4348;
+  }
+
+  .content-img {
+    width: 100%;
+  }
+
+  .content span {
+    font-size: 18px;
+    margin-left: 6%;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .hotels-content h5 {
+    font-size: 16px;
+  }
+
+  .hotels-content p {
+    font-size: 14px;
+    max-width: 70%;
+  }
+
+  .background-card-padding .card {
+    margin-bottom: 5%;
+  }
+}

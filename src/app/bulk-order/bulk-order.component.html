@@ -1,0 +1,129 @@
+<app-eshop-header></app-eshop-header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2 class="title-head">BULK ORDERS</h2>
+            <hr class="hr">
+            <p class="title-text">Special corporate discounts available for bulk merchandise purchase across all categories.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="background-color">
+                <div class="bull-order-form">
+                    <h2 class="form-title">Fill in the form below</h2>
+
+                    <form [formGroup]="inputData">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="name" 
+                                    placeholder="Name" formControlName="name"
+                                    [ngClass]="{'is-invalid': submitted && f['name'].errors}">
+                                    <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['name'].errors['required']">Name is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control"  name="email"
+                                    placeholder="Email" formControlName="email"
+                                    [ngClass]="{'is-invalid': submitted && f['email'].errors}">
+                                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['email'].errors['required']">Name is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="number"
+                                     placeholder="Contact Number" formControlName="email"
+                                    [ngClass]="{'is-invalid': submitted && f['number'].errors}">
+                                    <div *ngIf="submitted && f['number'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['number'].errors['required']">this filed is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control"  name="requirement" rows="3"
+                                        placeholder="Requirement" formControlName="requirement" 
+                                        [ngClass]="{'is-invalid': submitted && f['requirement'].errors}">
+                                        </textarea>
+                                        <div *ngIf="submitted && f['requirement'].errors" class="invalid-feedback">
+                                            <div *ngIf="f['requirement'].errors['required']">this filed is required</div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control"  name="address" rows="3"
+                                         placeholder="Address" formControlName="address" 
+                                        [ngClass]="{'is-invalid': submitted && f['address'].errors}">
+                                        </textarea>
+                                        <div *ngIf="submitted && f['address'].errors" class="invalid-feedback">
+                                            <div *ngIf="f['address'].errors['required']">this filed is required</div>
+                                        </div>
+                                  </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"  name="city"
+                                             placeholder="City" formControlName="city"
+                                            [ngClass]="{'is-invalid': submitted && f['city'].errors}">
+                                            <div *ngIf="submitted && f['city'].errors" class="invalid-feedback">
+                                                <div *ngIf="f['city'].errors['required']">this filed is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"  name="state"
+                                             placeholder="State" formControlName="state"
+                                            [ngClass]="{'is-invalid': submitted && f['state'].errors}">
+                                            <div *ngIf="submitted && f['state'].errors" class="invalid-feedback">
+                                                <div *ngIf="f['state'].errors['required']">this filed is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="pincode" 
+                                    placeholder="Pincode" formControlName="pincode"
+                                    [ngClass]="{'is-invalid': submitted && f['pincode'].errors}">
+                                    <div *ngIf="submitted && f['pincode'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['pincode'].errors['required']">Name is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <button type="button" class="btn" (click)="submit()">Submit</button>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Once we receive your request, our representative will contact as soon as possible.</li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-eshop-footer></app-eshop-footer>

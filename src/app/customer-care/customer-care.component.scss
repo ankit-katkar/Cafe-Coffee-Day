@@ -1,0 +1,46 @@
+.container{
+    margin-top: 8%;
+    padding: 0% 20% 0% 20%;
+}
+.title-head {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: .7px;
+    color: #d51922;
+    font-family: 'Montserrat', sans-serif;
+  }
+label{
+    color: #999;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-top: 1.5%;
+}
+.btn{
+    display: inline-block;
+    background: #dc4348;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+    .container{
+        margin-top: 15%;
+        padding: 0% 15% 0% 15%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        margin-top: 28%;
+        padding: 0% 5% 0% 5%;
+    }
+    label{
+        margin-top: 5%;
+    }
+}

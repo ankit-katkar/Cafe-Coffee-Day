@@ -1,0 +1,73 @@
+.container-fluid{
+margin-top: 8%;
+padding: 5%;
+}
+.title-head {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .7px;
+    color: #d51922;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .background-color{
+    background: #f3f3f2;
+    margin-top: 3%;
+  }
+  .background-card-content {
+    background-color: #f4f4f4;
+    padding-bottom: 5%;
+  }
+  
+  .background-card-padding {
+    padding: 4% 5% 0% 5%;
+  }
+  
+  .background-card-content .card .card-body {
+    padding: 0;
+  }
+  
+  .card-header{
+    padding: 0%;
+  }
+  .card-header img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .hotels-content h5 {
+    color: #575756;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+  
+  .hotels-content p {
+    color: #8c8c8c;
+    font-size: 18px;
+    margin-left: 3%;
+  }
+  
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+    .container-fluid{
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container-fluid{
+        margin-top: 32%;
+    }
+    .title-head {
+        font-size: 22px;
+    } 
+    .card{
+        margin-top: 5%;
+    }
+    .hotels-content h5 {
+        font-size: 16px;
+      }
+      
+      .hotels-content p {
+   font-size: 14px;
+      }  
+}

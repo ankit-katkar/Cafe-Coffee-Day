@@ -1,0 +1,102 @@
+<app-eshop-header></app-eshop-header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2 class="title-head">CONTACT US</h2>
+            <hr class="hr">
+            <p class="title-text">We love to hear what you think mail us at eshop@cafecoffeeday.com and we'll get back to you as soon as we can!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="background-color">
+                <div class="bull-order-form">
+                    <h2 class="form-title">Fill in the form below</h2>
+
+                    <form [formGroup]="inputData">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="name" 
+                                    placeholder="Name" formControlName="name"
+                                    [ngClass]="{'is-invalid': submitted && f['name'].errors}">
+                                    <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['name'].errors['required']">Name is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control"  name="email"
+                                    placeholder="Email" formControlName="email"
+                                    [ngClass]="{'is-invalid': submitted && f['email'].errors}">
+                                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['email'].errors['required']">Name is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="number" 
+                                    placeholder="Contact Number" formControlName="number"
+                                    [ngClass]="{'is-invalid': submitted && f['number'].errors}">
+                                    <div *ngIf="submitted && f['number'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['number'].errors['required']">Name is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control"  name="subject"
+                                    placeholder="Subject" formControlName="subject"
+                                    [ngClass]="{'is-invalid': submitted && f['subject'].errors}">
+                                    <div *ngIf="submitted && f['subject'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['subject'].errors['required']">Name is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="city"
+                                     placeholder="City" formControlName="city"
+                                    [ngClass]="{'is-invalid': submitted && f['city'].errors}">
+                                    <div *ngIf="submitted && f['city'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['city'].errors['required']">this filed is required</div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control"  name="message" rows="3"
+                                        placeholder="Message" formControlName="message" 
+                                        [ngClass]="{'is-invalid': submitted && f['message'].errors}">
+                                        </textarea>
+                                        <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                                            <div *ngIf="f['message'].errors['required']">this filed is required</div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <button type="button" class="btn" (click)="submit()">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rwo">
+        
+    </div>
+</div>
+<app-eshop-footer></app-eshop-footer>

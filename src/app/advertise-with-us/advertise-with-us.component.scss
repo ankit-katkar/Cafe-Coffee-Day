@@ -1,0 +1,118 @@
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    margin-top: 7%;
+}
+.header{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+    border-radius: 0%;
+}
+.wrapper {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    padding: 1% 10% 1% 10%;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.waitBtn{
+    color: white;
+    width: 200px;
+    background-color: #dc4348;
+    font-weight: 500;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+}
+.hoverBtn{
+    font-weight: 600;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hoverBtn:hover {
+    color: white;
+    background-color: #dc4348;
+    font-weight: 500;
+}
+.padding-content{
+    padding: 5% 21% 0% 21%;
+}
+.title-head {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .7px;
+    color: #d51922;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .info-content p{
+    color: #444;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    width: 100%;
+  }
+  .details-title{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .7px;
+    color: #d51922;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+  }
+  
+ .table tr th{
+    color: #d51922;
+    text-align: center;
+ }
+ 
+ .table tr td{
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    font-weight: 700;
+ }
+
+  @media only screen and (min-width: 480px) and (max-width: 770px) {
+    .wrapper {
+        padding: 8% 1% 1% 1%;
+    }
+    .padding-content{
+        padding: 5% 15% 0% 15%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 480px) {
+    .wrapper {
+        padding: 25% 1% 0% 1%;
+    }
+    .btn {
+        font-weight: 600;
+        width: 160px;
+        font-size: 12px;
+    }
+    .waitBtn{
+        font-weight: 500;
+    }
+    .padding-content{
+        padding: 5% 10% 0% 10%;
+    }
+    .title-head {
+        font-size: 24px;
+      }
+    
+      .info-content p{
+        font-size: 14px;
+      }
+      .details-title{
+        font-size: 24px;
+      }
+      strong{
+        font-size: 12px;
+      }
+  }

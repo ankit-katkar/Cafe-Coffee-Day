@@ -1,0 +1,173 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="card  header">
+        <div class="wrapper">
+            <div><button class="btn hoverBtn" routerLink="/lease-enquiry">LEASE ENQUIRY</button></div>
+            <div><button class="btn hoverBtn" routerLink="/advertise-with-us">ADVERTISE WITH US</button></div>
+            <div><button class="btn hoverBtn" routerLink="/e-shop">COFFEE VENDING MACHINE</button></div>
+            <div><button class="btn waitBtn" routerLink="/catering-services">CATERING SERVICE</button></div>
+          </div>
+    </div>
+    <div class="padding-form">
+        <div class="row">
+            <div class="col-lg-12">
+            <h2 class="title-head">ENQUIRY FORM</h2>
+            </div>
+        </div>
+        <div >
+            <form [formGroup]="inputData">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" class="form-control"  name="name"
+                            formControlName="name"
+                            [ngClass]="{'is-invalid': submitted && f['name'].errors}">
+                            <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                                <div *ngIf="f['name'].errors['required']">Name is required</div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Location *</label>
+                            <input type="text" class="form-control"  name="location"
+                            formControlName="location"
+                            [ngClass]="{'is-invalid': submitted && f['location'].errors}">
+                            <div *ngIf="submitted && f['location'].errors" class="invalid-feedback">
+                                <div *ngIf="f['location'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="text" class="form-control"  name="email"
+                            formControlName="email"
+                            [ngClass]="{'is-invalid': submitted && f['email'].errors}">
+                            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                                <div *ngIf="f['email'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Date & Time *</label>
+                            <input type="date" class="form-control"  name="calender"
+                            formControlName="calender"
+                            [ngClass]="{'is-invalid': submitted && f['calender'].errors}">
+                            <div *ngIf="submitted && f['calender'].errors" class="invalid-feedback">
+                                <div *ngIf="f['calender'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Company *</label>
+                            <input type="text" class="form-control" name="company"
+                            formControlName="company"
+                            [ngClass]="{'is-invalid': submitted && f['company'].errors}">
+                            <div *ngIf="submitted && f['company'].errors" class="invalid-feedback">
+                                <div *ngIf="f['company'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>How Many Days *</label>
+                            <input type="number" class="form-control"  name="HMD"
+                            formControlName="HMD"
+                            [ngClass]="{'is-invalid': submitted && f['HMD'].errors}">
+                            <div *ngIf="submitted && f['HMD'].errors" class="invalid-feedback">
+                                <div *ngIf="f['HMD'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Mobile *</label>
+                            <input type="number" class="form-control" name="number"
+                            formControlName="number"
+                            [ngClass]="{'is-invalid': submitted && f['number'].errors}">
+                            <div *ngIf="submitted && f['number'].errors" class="invalid-feedback">
+                                <div *ngIf="f['number'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>No. of People *</label>
+                            <input type="number" class="form-control"  name="people"
+                            formControlName="people"
+                            [ngClass]="{'is-invalid': submitted && f['people'].errors}">
+                            <div *ngIf="submitted && f['people'].errors" class="invalid-feedback">
+                                <div *ngIf="f['people'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Event Details *</label>
+                            <input type="text" class="form-control" name="event"
+                            formControlName="event"
+                            [ngClass]="{'is-invalid': submitted && f['event'].errors}">
+                            <div *ngIf="submitted && f['event'].errors" class="invalid-feedback">
+                                <div *ngIf="f['event'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Preference *</label>
+                            <select class="form-select" aria-label="Default select example" name="perference"
+                            formControlName="perference"
+                            [ngClass]="{'is-invalid': submitted && f['perference'].errors}">
+                                <option selected>Select Subject</option>
+                                <option value="1">Food and Beverages</option>
+                                <option value="2">Food</option>
+                                <option value="3">Beverages</option>
+                                <option value="4">International Store</option>
+                                <option value="5">Careers</option>
+                                <option value="9">Others</option>
+                              </select>
+                              <div *ngIf="submitted && f['perference'].errors" class="invalid-feedback">
+                                <div *ngIf="f['perference'].errors['required']">this filed is required</div>
+                            </div>
+                        </div>
+                      </div>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label>Requirement Details *</label>
+                                <textarea type="text" class="form-control"  name="message" rows="3"
+                                formControlName="message" 
+                                [ngClass]="{'is-invalid': submitted && f['message'].errors}">
+                                </textarea>
+                                <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['message'].errors['required']">this filed is required</div>
+                                </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <button type="button" class="btn SubmitBtn mx-auto d-block" (click)="submit()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<app-footer></app-footer>
+
+
