@@ -3,27 +3,33 @@
   margin: 0%;
   overflow: hidden;
 }
-.ImageSlider{
+
+.ImageSlider {
   padding-top: 100px;
 }
+
 .picsum-img-wrapper img {
   width: 100%;
 }
+
 .card {
-    position: relative;
-    text-align: center;
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
-  .removePadding{
-    padding: 0;
-    margin: 0;
-  }
-  .card-body{
-    padding: 0;
-    margin: 0;
-  }
+  position: relative;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.removePadding {
+  padding: 0;
+  margin: 0;
+}
+
+.card-body {
+  padding: 0;
+  margin: 0;
+}
+
 .card-body img {
   width: 100%;
   padding: 0;
@@ -39,9 +45,12 @@
   left: 50%;
   position: absolute;
   padding: 6px 22px 6px 22px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%)
 }
-.wallpaper{
+
+.wallpaper {
   position: relative;
   background: url(../../assets/Wallpaper.jpg) no-repeat fixed;
   background-size: cover;
@@ -49,11 +58,13 @@
   height: 500px;
   z-index: 0;
 }
-.wallpaper img{
+
+.wallpaper img {
   width: 32%;
   padding-top: 100px;
 }
-.w-btn{
+
+.w-btn {
   background-color: #dc4348;
   color: white;
   font-weight: bold;
@@ -64,44 +75,50 @@
 }
 
 
-@media only screen and (min-width: 480px) and (max-width: 770px){
+@media only screen and (min-width: 480px) and (max-width: 770px) {
   .card-body .btn {
     width: 70%;
     top: 80%;
     font-size: 14px;
     padding: 6px 0px 6px 0px;
   }
-  .wallpaper{
+
+  .wallpaper {
     width: 100%;
     height: 400px;
   }
-  .wallpaper img{
+
+  .wallpaper img {
     width: 50%;
     padding-top: 70px;
   }
-  .w-btn{
+
+  .w-btn {
     top: 72%;
     left: 40%;
   }
 }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .card-body .btn {
-      font-size: 12px;
-      padding: 8px 15px 8px 15px;
-    }
-    .wallpaper{
-      width: 100%;
-      height: 400px;
-  background: url(../../assets/Wallpaper.jpg);
 
-    }
-      .wallpaper img{
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .card-body .btn {
+    font-size: 12px;
+    padding: 8px 15px 8px 15px;
+  }
+
+  .wallpaper {
+    width: 100%;
+    height: 400px;
+    background: url(../../assets/Wallpaper.jpg);
+
+  }
+
+  .wallpaper img {
     width: 80%;
     padding-top: 70px;
   }
-  .w-btn{
+
+  .w-btn {
     top: 60%;
     left: 25%;
   }
 }
-

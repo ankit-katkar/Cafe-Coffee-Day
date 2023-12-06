@@ -1,69 +1,83 @@
-.container-fluid{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    padding-top: 7%;
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-top: 7%;
 }
-.Background-Image img{
-    width: 100%;
+
+.Background-Image img {
+  width: 100%;
 }
+
 div.gallery {
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-    box-shadow: 1px 1px #ececec;
-  }
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  .btn{
-    background-color:  #dc4348;
-    color: white;
-    border-radius: 25px;
-  }
-.content{
-    padding: 2% 25% 1% 25%;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  box-shadow: 1px 1px #ececec;
 }
-h2{
-    font-size: 30px;
-    color: #dc4348;
-    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
-.Header-Text{
-    font-size: 17px;
-    color: #dc4348;
-    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
-.Body-Text{
-    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
-    color: #444;
-    font-size: 16px;
+
+.btn {
+  background-color: #dc4348;
+  color: white;
+  border-radius: 25px;
 }
-@media only screen and (min-width: 480px) and (max-width: 770px){
-  .container-fluid{
+
+.content {
+  padding: 2% 25% 1% 25%;
+}
+
+h2 {
+  font-size: 30px;
+  color: #dc4348;
+  font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.Header-Text {
+  font-size: 17px;
+  color: #dc4348;
+  font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Body-Text {
+  font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+  color: #444;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+  .container-fluid {
     padding-top: 12%;
+  }
+
+  .content {
+    padding: 2% 5% 1% 5%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
 }
-.content{
-  padding: 2% 5% 1% 5%;
-}
-h2{
-  font-size: 30px;
-}
-}
-@media only screen and (max-width: 480px){
-  .container-fluid{
+
+@media only screen and (max-width: 480px) {
+  .container-fluid {
     padding-top: 28%;
-}
-.content{
-  padding: 2% 3% 1% 3%;
-}
-h2{
-  font-size: 30px;
-}
+  }
+
+  .content {
+    padding: 2% 3% 1% 3%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
 }

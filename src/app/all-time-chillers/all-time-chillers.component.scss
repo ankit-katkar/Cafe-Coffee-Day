@@ -4,9 +4,13 @@
     overflow: hidden;
 }
 
-.Cafe-Menu-Image {
+.disktop-view img {
     width: 100%;
     padding-top: 80px;
+}
+
+.mobile-view img{
+    display: none;
 }
 
 .wrapper {
@@ -58,6 +62,17 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .container-fluid{
+        padding-top: 25%;
+    }
+    .disktop-view img {
+      display: none;
+    }
+    
+    .mobile-view img{
+        display: block;
+        width: 100%;
+    }
     .wrapper {
         padding: 5% 1% 1% 1%;
     }

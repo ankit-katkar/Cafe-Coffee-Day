@@ -4,14 +4,22 @@
     overflow: hidden;
 }
 
-.Cafe-Menu-Image {
+.disktop-view img {
     width: 100%;
     padding-top: 80px;
 }
 
+.mobile-view img{
+    display: none;
+}
+
 .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow-x: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 2% 6% 2% 6%;
 }
@@ -20,7 +28,7 @@
     width: 0;
 }
 
-.waitBtn{
+.waitBtn {
     color: white;
     background-color: #dc4348;
     font-weight: 500;
@@ -28,7 +36,8 @@
     border-radius: 25px;
     font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 }
-.hoverBtn{
+
+.hoverBtn {
     font-weight: 600;
     width: 180px;
     border-radius: 25px;
@@ -58,6 +67,17 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .container-fluid{
+        padding-top: 25%;
+    }
+    .disktop-view img {
+      display: none;
+    }
+    
+    .mobile-view img{
+        display: block;
+        width: 100%;
+    }
     .wrapper {
         padding: 5% 1% 1% 1%;
     }

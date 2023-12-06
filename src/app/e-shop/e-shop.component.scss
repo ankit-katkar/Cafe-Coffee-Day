@@ -2,11 +2,7 @@
   padding: 0%;
   margin: 0%;
   overflow: hidden;
-}
-
-.main-banner img {
-  width: 100%;
-  padding-top: 120px;
+  margin-top: 5%;
 }
 
 .tab-section {
@@ -152,8 +148,13 @@
   margin-top: 5%;
 }
 
-.Subscribe_and_save_img img {
+.disktop-view img {
   width: 100%;
+  padding-top: 80px;
+}
+
+.mobile-view img{
+  display: none;
 }
 
 .padding-row {
@@ -277,6 +278,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .container-fluid {
+    margin-top: 35%;
+  }
+  
   .home-title {
     font-size: 20px;
   }
@@ -358,5 +363,13 @@
 
   .background-card-padding .card {
     margin-bottom: 5%;
+  }
+  .disktop-view img {
+    display: none;
+  }
+  
+  .mobile-view img{
+      display: block;
+      width: 100%;
   }
 }
